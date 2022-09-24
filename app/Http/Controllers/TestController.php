@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Post;
 use Illuminate\Http\Request;
 
 class TestController extends Controller
@@ -14,4 +15,6 @@ class TestController extends Controller
         dd($testVar);        //log data with stop code
 //        return('test');
     }
+
+
 }
