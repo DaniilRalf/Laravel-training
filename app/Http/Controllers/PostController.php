@@ -99,4 +99,10 @@ class PostController extends Controller
             'title' => 'another title',
         ], $anotherPost);
     }
+
+    public function testView() {
+        $posts = Post::all();
+
+        return view('testview', compact('posts'));
+    }
 }
